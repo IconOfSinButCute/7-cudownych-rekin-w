@@ -1,0 +1,557 @@
+header {
+background-color: #C3DBB4;
+font-size: 30pt;
+font-weight: bolder;
+font-variant: small-caps;
+height: 8vh;
+text-align: center;
+border-radius: 10px;
+animation-name: titl;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+@keyframes titl {
+    from {
+        color:#599592;
+        text-shadow: none;
+    }
+    to {
+        color:black;
+        text-shadow: #68B3AF 5px 6px;
+    }
+}
+nav {
+background-color: #AACCB1;
+width:200px;
+height: 80vh;
+float:left;
+margin-top: 16px;
+
+font-size: x-large;
+border-radius: 10px;
+
+}
+main.start1 {
+
+height: 80vh;
+
+margin-left: 215px;
+border-radius: 10px;
+}
+footer{
+    clear: both;
+background-color: #AACCB1;
+height:2.5vh;
+border-radius: 10px;
+}
+body{
+background-color: #D3E2B6;
+overflow-x: hidden;
+}
+
+iframe {
+width: 100%;
+height: 80vh;
+float: left;
+}
+
+
+td{
+    border-width: 1px ;
+    border-color: #4c9e9a; 
+    border-style: outset;
+    min-width: 100px;
+}
+ul{
+    list-style-type: circle;
+    animation: lista 12s linear ;
+}
+@keyframes lista {
+    from{
+        list-style-type: disc;
+    }
+    to{
+        list-style-type: circle;
+    }
+}
+img.start{
+    max-width: 50vw;
+    min-height: 230px;
+min-width: 300px;
+}
+img.start1{
+    max-width: 63vw;
+    min-height: 230px;
+min-width: 300px;
+}
+@keyframes popup {
+    from{
+        font-size: medium;
+        text-decoration: underline;
+    }
+    to{
+        font-size: large;
+        text-decoration: none;
+    }
+}
+a:hover {
+    animation-name: popup;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+header.galls1 {
+    background-color: #C3DBB4;
+    font-size: 30pt;
+    font-weight: bolder;
+    font-variant: small-caps;
+    height: 9vh;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main.galls2 {
+    height: 80vh;
+    border-radius: 10px;
+    width:100vw;
+}
+footer.galls3 {
+    clear: both;
+    background-color: #AACCB1;
+    height:3vh;
+    border-radius: 10px;
+}
+body.galls4 {
+    background-color: #D3E2B6;
+}
+nav.galls5 {
+    background-color: #AACCB1;
+    float:left;
+    margin-top: 16px;
+
+    border-radius: 10px;
+
+        font-size: medium;
+        width:100%;
+        height: 5vh;
+        text-align: center;
+    }
+div.gallery {
+    border: 1px solid #ccc;
+}
+.imggal{
+    min-width: 250px; /* something something validator propaganda */
+    min-height: 200px;
+    
+    
+}
+img{
+    width:100%;
+    height:auto;
+}
+
+.desc{
+    padding: 10px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+    height: 20vw;
+    
+}
+@media only screen and (max-width: 1200px){
+    .responsive{
+        width: 50%;
+        margin: 6px 0;
+        height: 57vh;
+    }
+    header {
+        height: 5.5vh;
+        font-size: 27pt;
+    }
+    nav.galls5{
+        height: 10vh;
+        line-height: 30px;
+        padding-top: 10px;
+        word-spacing: 17px;
+    }
+    .imggal{
+        min-width: 500px;
+        min-height: 420px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .responsive{
+        width:100%;
+    }
+    nav.galls5 {
+        height: auto;
+        font-size: large;
+        display: none;
+    }
+    header {
+        height: auto;
+        text-align: right;
+        min-height: 65px;
+        padding-right: 10px;
+    }
+
+    .formimg{
+        height: auto;
+        max-width: 80vw;
+    }
+    .imggal{
+        width: 590px;
+        height: 450px;
+    }
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+
+.textwidth{
+    width: 75%;
+    height: auto;
+    display: block;
+
+}
+
+.blou{
+    background-color: rgb(255, 223, 239);
+}
+.start2{
+    max-width: 30vw;
+}
+.formimg{
+    height: 325px;
+    width: auto;
+}
+.vid{
+    width: 100vw;
+    height: 315px;
+}
+
+
+/*   DUMBASS get worki here */
+
+.galeria {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .duze-zdjecie {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .slajdy {
+    max-width: 50vh;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: switch 40s infinite linear;
+    min-width: 550px;
+  }
+    .slajdy img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  @keyframes switch {
+    0% { transform: translateX(0%); }
+  
+    100% { transform: translateX(-600%); } 
+  }
+
+  @media only screen and (max-width: 1200px){
+    .miniaturki {
+        display: none;
+        visibility: hidden;
+        width:0;
+        position: fixed;
+        
+    }
+    .slajdy{
+        max-width: 50vh;
+    }
+
+    .miniaturki2 {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        /* ?? */
+
+      }
+
+}
+@media only screen and (max-width: 600px) {
+    .miniaturki2 {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        /* ?? */
+        
+      }
+      .tryagain {
+        display: none;
+      }
+      .meow{
+        display: none;
+      }
+      .meow2{
+        display: block;
+        width: 49vw;
+        height: auto;
+        border-color: #D3E2B6;
+        border-width: 0;
+      }
+      .tryagain {
+        display: block;
+        width: 49vw;
+        height: auto;
+        border-color: #D3E2B6;
+        border-width: 0;
+    }
+}
+.meow2{
+    display:none;
+    min-width: 100px;
+    min-height: 100px;
+}
+.tryagain2 {
+
+    display: none;
+}
+.tryagain {
+    width: 24vw;
+    height: auto;
+    border-color: #D3E2B6;
+    border-width: 0;
+}
+.meow{
+    border-color: #D3E2B6;
+    border-width: 0;
+}
+.pomozmi{
+    height: 45vh;
+    width: 45vw;
+    border-color: #D3E2B6;
+    border-width: 0;
+}
+.miniaturki2{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    
+}
+    /* walić minaturki*/
+  .miniaturki {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    /* ?? */
+    display: none;
+    visibility: hidden;
+    width:0;
+    position: fixed;
+  }
+
+  .miniaturka {
+    width: 175px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s;
+  }
+  
+  .miniaturka:hover {
+    border: 2px solid #000;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+  }
+
+  /* wowrki otworki 2 */
+
+/* projs thanks for helping with this but i don't owe you anything cuz i hepled you you bitch*/
+
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #68B3AF;
+}
+    
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    
+
+.dropdown:hover .dropbtn {
+    background-color: #4c9e9a;
+}
+
+.dropdown {
+    margin-top: 10px;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+    visibility: hidden;
+}
+    
+
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #D3E2B6;
+    min-width: 80px;
+    box-shadow: 0 8px 16px 0 black;
+    z-index: 1;
+    visibility: hidden;
+}
+    
+
+.dropbtn {
+    visibility: hidden;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: #333333;
+}
+
+
+
+details{
+
+    background-color: #4eada9; 
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    display: none;
+    }
+summary{
+    background-color: #81d3cf;
+    border-radius: 10px;
+    display: none;
+
+    }
+    @media only screen and (min-width: 601px) and (max-width: 1200px){
+        details{
+            display:block;
+        }
+        summary{
+            display:block;
+        }
+        .textwidth{
+            display: none;
+        }
+    }
+    .mini{
+        height: auto;
+        font-size: medium;
+        max-height: 5vh;
+    }
+/* ok how the hell do i do this*/
+@media only screen and (max-width:600px){
+
+    summary{
+        display:none;
+    }
+    .dropbtn{
+        visibility: visible;
+    }
+    .dropdown{
+        visibility: visible;
+    }
+    .dropdown-content{
+        visibility: visible;
+    }
+    main.galls2 {
+        height: 85vh;
+        border-radius: 10px;
+    }
+    .meows{
+        height: 85vh;
+    }
+    p{
+        margin-left: 10vw;
+    }
+    table{
+        margin-left: 15vw;
+    }
+    picture{
+        margin-left: 10vw;
+    }
+    h4{
+        margin-left: 13vh;
+    }
+
+
+}
+@media only screen and (max-width:1200px){
+
+    .galls5 a{
+        border: #599592 ridge 1px;
+
+        background-color: #68B3AF;
+        height: auto;
+        width: fit-content;
+    }
+    .galls2{
+        height: 77vh;
+    }
+    .meows{
+        height: 77vh;
+    }
+
+
+}
+
